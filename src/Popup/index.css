@@ -1,0 +1,56 @@
+.SiliconPopup {
+  display: flex;;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, .3);
+  padding: 100px 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+  backdrop-filter: blur(10px);
+  transition: var(--transition-duration);
+}
+
+@media (max-width: 680px) {
+  .SiliconPopup {
+    padding: 0
+  }
+}
+
+.SiliconPopup[class*="isScrollable"] {
+  overflow: auto;
+}
+
+.SiliconPopup:not([class*="isShown"]) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.SiliconPopup__container {
+  width: 100%;
+  margin: auto;
+  max-width: 680px;
+  background: #fff;
+  transition: var(--transition-duration);
+}
+
+@media (max-width: 680px) {
+  .SiliconPopup__container {
+    margin-bottom: 0
+  }
+}
+
+.SiliconPopup__container:not([class*="isShown"]) {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+}
+
+@media (max-width: 680px) {
+  .SiliconPopup__container:not([class*="isShown"]) {
+    transform: translateY(100%);
+  }
+}

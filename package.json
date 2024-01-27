@@ -1,0 +1,40 @@
+{
+  "name": "@congritta/silicon-popup",
+  "license": "MIT",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "packageManager": "yarn@4.0.2",
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "@types/react": "^18.2.45",
+    "nodemon": "^3.0.2",
+    "typescript": "^5.3.3"
+  },
+  "description": "Popup react component with zero CSS styles",
+  "keywords": [
+    "silicon",
+    "modal",
+    "window",
+    "popup",
+    "react"
+  ],
+  "author": {
+    "name": "Alex Congritta",
+    "email": "congritta@gmail.com",
+    "url": "https://congritta.com"
+  },
+  "homepage": "https://congritta.github.io/silicon-popup",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/congritta/silicon-popup"
+  },
+  "scripts": {
+    "dev": "bash scripts/dev.sh",
+    "start": "bash scripts/start.sh",
+    "build": "bash scripts/build.sh"
+  },
+  "peerDependencies": {
+    "react": "*"
+  }
+}
